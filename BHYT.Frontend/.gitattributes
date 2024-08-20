@@ -1,0 +1,2 @@
+# Ensure that all files have LF line endings when committing
+* text=auto eol=lf

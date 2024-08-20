@@ -1,0 +1,9 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+if [ ! -f .env.template ]; then
+    echo ".env.template file must not be removed. Please restore it."
+    exit 1
+fi
+
+npm run lint:fix
